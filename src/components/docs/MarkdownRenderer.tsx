@@ -52,18 +52,29 @@ const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ sectionId }) => {
 
   const getLatestFileForSection = async (sectionId: string): Promise<string | null> => {
     try {
-      // For now, we'll use a simple approach
-      // In a real implementation, you might want to fetch file list dynamically
-      const knownFiles: { [key: string]: string[] } = {
-        '001_INTRODUCTION': ['introduction_0.2.0.md', 'introduction_0.1.0.md']
-      };
+      // Fetch docs-structure.json to get file information
+      const structureResponse = await fetch('/md/docs-structure.json');
+      if (!structureResponse.ok) {
+        throw new Error('Failed to load docs structure');
+      }
 
-      const files = knownFiles[sectionId] || [];
+      const structure = await structureResponse.json();
+      const languageData = structure[language];
 
-      if (files.length === 0) return null;
+      if (!languageData || !languageData.sections) {
+        throw new Error('Invalid docs structure');
+      }
+
+      // Find the section
+      const section = languageData.sections.find((s: any) => s.id === sectionId);
+      if (!section || !section.files || section.files.length === 0) {
+        return null;
+      }
+
+      const files = section.files;
 
       // Sort files by version number (assuming format: name_x.y.z.md)
-      const sortedFiles = files.sort((a, b) => {
+      const sortedFiles = files.sort((a: string, b: string) => {
         const versionA = a.match(/(\d+)\.(\d+)\.(\d+)/);
         const versionB = b.match(/(\d+)\.(\d+)\.(\d+)/);
 
