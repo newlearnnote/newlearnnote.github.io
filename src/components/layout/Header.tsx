@@ -12,7 +12,7 @@ const Header = () => {
         setIsMenuOpen(!isMenuOpen);
     };
 
-    const handleLanguageChange = (lang: 'KOR' | 'ENG') => {
+    const handleLanguageChange = (lang: "ENG" | "KOR") => {
         setLanguage(lang);
     };
 
@@ -31,17 +31,17 @@ const Header = () => {
                 <div className={`menu-section ${isMenuOpen ? "open" : ""}`}>
                     <div className="language-switcher">
                         <button
-                            className={`lang-btn ${language === 'KOR' ? 'active' : ''}`}
-                            onClick={() => handleLanguageChange('KOR')}
+                            className={`lang-btn ${language === "ENG" ? "active" : ""}`}
+                            onClick={() => handleLanguageChange("ENG")}
                         >
-                            KOR
+                            ENG
                         </button>
                         <span className="lang-divider">|</span>
                         <button
-                            className={`lang-btn ${language === 'ENG' ? 'active' : ''}`}
-                            onClick={() => handleLanguageChange('ENG')}
+                            className={`lang-btn ${language === "KOR" ? "active" : ""}`}
+                            onClick={() => handleLanguageChange("KOR")}
                         >
-                            ENG
+                            KOR
                         </button>
                     </div>
                     <div>
