@@ -1,0 +1,117 @@
+/* ===== CSS VARIABLES FOR THEME SYSTEM ===== */
+:root {
+    /* Dark Theme (Default) */
+    --bg-primary: #111111;
+    --bg-secondary: #222222;
+    --bg-tertiary: #333333;
+    --bg-hover: #444444;
+
+    --text-primary: #ffffff;
+    --text-secondary: #ababab;
+    --text-button: #ababab;
+
+    --border-color: #333333;
+    --border-hover: #555555;
+
+    /* Accent Colors */
+    --accent-mint: #93e3c0;
+    --accent-mint-hover: #acf3d4;
+    --accent-blue: #5a6c9f;
+    --accent-blue-hover: #7d8fc1;
+
+    /* Status Colors */
+    --success: var(--accent-mint);
+    --warning: #ffb74d;
+    --error: #f44336;
+    --info: var(--accent-blue);
+
+    /* Web specific colors */
+    --primary-gradient: linear-gradient(135deg, var(--accent-blue), var(--accent-mint));
+    --hero-gradient: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+    --text-gradient: linear-gradient(135deg, var(--accent-blue), var(--accent-mint));
+    --highlight-gradient: linear-gradient(135deg, var(--accent-mint), #7dd3fc);
+}
+
+[data-theme="light"] {
+    --bg-primary: #ffffff;
+    --bg-secondary: #f8f9fa;
+    --bg-tertiary: #e9ecef;
+    --bg-hover: #dee2e6;
+
+    --text-primary: #212529;
+    --text-secondary: #6c757d;
+    --text-button: #495057;
+
+    --border-color: #dee2e6;
+    --border-hover: #adb5bd;
+}
+
+/* ===== BASE STYLES ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    max-width: 100vw;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Pretendard Variable", Pretendard;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.6;
+    color: var(--text-primary);
+    background: var(--bg-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    font-family: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* ===== SCROLLBAR STYLING ===== */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--bg-hover);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--text-secondary);
+}
+
+/* ===== TRANSITIONS FOR THEME SWITCHING ===== */
+* {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
