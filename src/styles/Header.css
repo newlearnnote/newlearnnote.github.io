@@ -125,11 +125,6 @@ header {
 }
 
 @media (max-width: 768px) {
-    header {
-        height: 50px;
-        margin: 0 auto;
-    }
-
     #header-wrapper {
         height: 50px;
     }
@@ -148,17 +143,17 @@ header {
 }
 
 @media (max-width: 420px) {
-    header {
-        background-color: #fff;
-    }
-
     .hamburger {
         display: flex;
     }
 
+    .hamburger span {
+        background: var(--text-primary);
+    }
+
     .menu-section {
-        background-color: #fff;
-        border-bottom: 1px solid #ccc;
+        background-color: var(--bg-secondary);
+        border-bottom: 1px solid var(--border-color);
         position: absolute;
         flex-direction: column;
         right: 0;
