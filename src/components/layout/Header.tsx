@@ -45,7 +45,7 @@ const Header = () => {
                         </button>
                     </div>
                     <div>
-                        <a href="https://github.com/1Dohyeon" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/newlearnnote" target="_blank" rel="noopener noreferrer">
                             GitHub
                         </a>
                     </div>
