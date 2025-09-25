@@ -1,35 +1,31 @@
-# NewLearn Note Introduction
+# NewLearnNote Introduction
 
-**NewLearn Note** aims to be more than just a simple note-taking app - it's a **next-generation knowledge management and learning platform powered by AI and collective intelligence**.
+## Introduction
 
-## Vision
+**NewLearnNote** is a next-generation knowledge management platform that combines AI and collective intelligence. While traditional personal note-taking applications focus primarily on information recording, NewLearnNote emphasizes utilizing and expanding that information.
 
-Our vision is to become a 'personalized navigation system' that helps users not get lost in the flood of information, and a 'learning engine' that accelerates user growth.
+Modern knowledge workers face significant challenges in efficiently managing fragmented information and learning from others' specialized expertise. NewLearnNote was developed to address these issues of information overload and knowledge sharing gaps.
 
-## Core Features
+### Development Philosophy
 
-We help users experience the following:
+NewLearnNote is built on the fundamental belief that "knowledge becomes more valuable when shared." Our development team is guided by the following core values:
 
-- Efficiently manage information
-- Create new knowledge with AI assistance
-- Experience the power of collective intelligence through interaction with other users
+**Collaborative Growth**: We believe that genuine knowledge expansion occurs when individual learning connects with others' growth. This goes beyond simple information sharing to create a process where users build new insights based on each other's knowledge.
 
-## Pricing Plans
+**Active Learning**: Rather than passively accumulating information, we aim to foster an active learning culture where users continuously question and explore through AI interaction.
 
-### Free
-- Local use only
-- Access to published notes by others
-- Connect to your local notes only
+**Sustainable Knowledge Ecosystem**: Our goal is to build a healthy knowledge ecosystem where user contributions help other users, creating a virtuous cycle that benefits the entire community.
 
-### Basic
-- 10GB cloud storage provided
-- $5 per month
+### Key Features
 
-### Plus
-- 10GB storage space
-- AI features available
-- Access to all premium features
+**AI-Powered Active Learning Coach**
+The system analyzes your notes in real-time to provide personalized questions and learning pathways. It serves as a customized learning partner that identifies your learning patterns and fills knowledge gaps.
 
-## Getting Started
+**Collective Intelligence Network**
+We provide a collaborative learning environment through knowledge referencing and interconnection between users. Individual expertise is naturally transmitted to other learners through the network, elevating the knowledge level of the entire community.
 
-Start your knowledge journey with NewLearn Note!
+**Cross-Platform Support**
+The platform offers a consistent user experience across desktop and web interfaces, seamlessly integrating local file management with cloud synchronization. This enables uninterrupted learning anytime, anywhere.
+
+**Open and Transparent Knowledge Sharing**
+All published knowledge is designed to be verified and improved by other users. This ensures continuous quality improvement and the accumulation of reliable learning materials.

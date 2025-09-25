@@ -4,12 +4,17 @@
             {
                 "id": "001_INTRODUCTION",
                 "title": "소개",
-                "files": ["introduction_0.1.0.md"]
+                "files": ["introduction_0.2.0.md"]
             },
             {
                 "id": "002_OVERVIEW",
                 "title": "개요",
-                "files": ["overview_0.1.0.md"]
+                "files": ["overview_0.2.0.md"]
+            },
+            {
+                "id": "003_FAQ",
+                "title": "자주 묻는 질문",
+                "files": ["faq_0.1.0.md"]
             }
         ]
     },
@@ -18,12 +23,17 @@
             {
                 "id": "001_INTRODUCTION",
                 "title": "Introduction",
-                "files": ["introduction_0.1.0.md"]
+                "files": ["introduction_0.2.0.md"]
             },
             {
                 "id": "002_OVERVIEW",
                 "title": "Overview",
-                "files": ["overview_0.1.0.md"]
+                "files": ["overview_0.2.0.md"]
+            },
+            {
+                "id": "003_FAQ",
+                "title": "Frequently Asked Questions",
+                "files": ["faq_0.1.0.md"]
             }
         ]
     }
