@@ -1,24 +1,24 @@
 # NewLearnNote Overview
 
-## Development Background
+## 1. Development Background
 
 Modern society is experiencing an unprecedented era of information explosion. As the volume of information produced daily grows exponentially, knowledge workers including students, researchers, and professionals face significant challenges in transforming and utilizing information beyond mere consumption into meaningful knowledge.
 
-### Current Limitations in Knowledge Management
+### 1-1. Current Limitations in Knowledge Management
 
-**1. Issues with Passive Information Management**
+**Issues with Passive Information Management**
 
 Existing note-taking applications remain limited to the role of digital notepads. While users record information, they receive no support on how that information can be connected and developed. As a result, accumulated notes often become unused digital clutter.
 
 Modern learning focuses not on simple information storage, but on creating new insights through connections between pieces of information. However, existing tools fail to support this active learning process.
 
-**2. Knowledge Isolation and Accessibility Issues**
+**Knowledge Isolation and Accessibility Issues**
 
 There exists a structural problem where valuable knowledge and experience accumulated by individuals are not shared with others, preventing them from benefiting from collective intelligence. Particularly during learning, when users need related experiences or organized materials from others, the process of opening separate web browsers to search for and verify reliable sources disrupts learning flow and scatters concentration.
 
 While Google search is powerful, it is optimized for general keyword-based information retrieval and has limitations in finding specialized knowledge relevant to the current learning context. Additionally, there is the burden of individually verifying the reliability of search results.
 
-### NewLearnNote's Approach
+### 1-2. NewLearnNote's Approach
 
 NewLearnNote addresses these issues through two innovative approaches:
 
@@ -26,9 +26,9 @@ NewLearnNote addresses these issues through two innovative approaches:
 
 **Integrated Learning Environment**: Note creation, AI interaction, knowledge search, and reference management occur within a single unified interface, minimizing disruption to learning flow.
 
-## Core Features
+## 2. Core Features
 
-### 1. AI-Powered Active Learning Coach (Premium Feature)
+### 2-1. AI-Powered Active Learning Coach (Premium Feature)
 
 NewLearnNote's AI system serves as a genuine learning partner that goes beyond simple question-and-answer interactions.
 
@@ -49,7 +49,7 @@ NewLearnNote's AI system serves as a genuine learning partner that goes beyond s
 - Personalized suggestions for optimal learning timing and review cycles
 - Visualization of knowledge connections to create learning maps
 
-### 2. Collective Intelligence Network
+### 2-2. Collective Intelligence Network
 
 NewLearnNote's core differentiating factor, the collective intelligence network, creates a virtuous cycle where individual user knowledge becomes an asset for the entire community.
 
@@ -70,7 +70,7 @@ NewLearnNote's core differentiating factor, the collective intelligence network,
 - Change tracking and rollback functionality through version management systems
 - Active discussion environments through real-time collaborative editing and comment systems
 
-### 3. Cross-Platform Integrated Environment
+### 2-3. Cross-Platform Integrated Environment
 
 **Powerful Desktop Application (Electron.js)**
 - Perfect integration with local file systems providing Obsidian-level file management functionality
@@ -90,7 +90,7 @@ NewLearnNote's core differentiating factor, the collective intelligence network,
 - Context-based content discovery through semantic search
 - Multi-dimensional information exploration using tags, links, and reference relationships
 
-## Subscription Model
+## 3. Subscription Model
 
 NewLearnNote provides tiered services to meet users' diverse needs.
 

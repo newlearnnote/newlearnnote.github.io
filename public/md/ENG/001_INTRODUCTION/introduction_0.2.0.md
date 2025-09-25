@@ -1,12 +1,12 @@
 # NewLearnNote Introduction
 
-## Introduction
+## 1. Introduction
 
 **NewLearnNote** is a next-generation knowledge management platform that combines AI and collective intelligence. While traditional personal note-taking applications focus primarily on information recording, NewLearnNote emphasizes utilizing and expanding that information.
 
 Modern knowledge workers face significant challenges in efficiently managing fragmented information and learning from others' specialized expertise. NewLearnNote was developed to address these issues of information overload and knowledge sharing gaps.
 
-### Development Philosophy
+## 2. Development Philosophy
 
 NewLearnNote is built on the fundamental belief that "knowledge becomes more valuable when shared." Our development team is guided by the following core values:
 
@@ -16,7 +16,7 @@ NewLearnNote is built on the fundamental belief that "knowledge becomes more val
 
 **Sustainable Knowledge Ecosystem**: Our goal is to build a healthy knowledge ecosystem where user contributions help other users, creating a virtuous cycle that benefits the entire community.
 
-### Key Features
+## 3. Key Features
 
 **AI-Powered Active Learning Coach**
 The system analyzes your notes in real-time to provide personalized questions and learning pathways. It serves as a customized learning partner that identifies your learning patterns and fills knowledge gaps.
