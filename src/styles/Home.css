@@ -1,0 +1,12 @@
+.docs-page-wrapper {
+    background: var(--bg-tertiary);
+    min-height: 100vh;
+    padding-top: 60px; /* 헤더 높이만큼 패딩 */
+    padding-left: 280px; /* 사이드바 너비만큼 패딩 */
+}
+
+.docs-page-container {
+    width: 100%; /* max-width 제거하고 전체 너비 사용 */
+    min-height: calc(100vh - 60px);
+    overflow: hidden;
+}

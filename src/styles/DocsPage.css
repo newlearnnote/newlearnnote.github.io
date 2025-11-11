@@ -1,37 +1,62 @@
-.docs-page-wrapper {
-    background: var(--bg-secondary);
-    min-height: calc(100vh - 60px); /* Header height 60px */
-    margin-top: 60px; /* Header height offset */
-}
-
-.docs-page-container {
-    display: flex;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
-    min-height: calc(100vh - 60px);
-}
-
 .docs-page-content {
-    flex: 1;
-    background: var(--bg-secondary);
-    overflow-y: auto;
+    width: 100%;
+    padding: 0 2rem; /* 좌우 패딩을 늘려서 가독성 향상 */
+    /* overflow 제거 - 전체 페이지 스크롤 사용 */
+}
+
+/* Download notice styles */
+.download-notice {
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.download-notice p {
+    margin: 0;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.download-notice strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.download-notice a {
+    color: var(--accent-mint);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.download-notice a:hover {
+    color: var(--accent-mint-hover);
+    text-decoration: underline;
 }
 
 /* Mobile responsive */
 @media (max-width: 768px) {
     .docs-page-wrapper {
-        margin-top: 50px; /* Mobile header height */
-        min-height: calc(100vh - 50px);
+        padding-top: 50px; /* 모바일 헤더 높이 */
+        padding-left: 0; /* 모바일에서는 사이드바가 위에 있으므로 padding 제거 */
+        min-height: 100vh;
     }
 
     .docs-page-container {
-        flex-direction: column;
+        width: 100%; /* max-width 제거 */
         padding: 0 1rem;
         min-height: calc(100vh - 50px);
     }
 
     .docs-page-content {
-        width: 100%;
+        padding: 0 1.5rem; /* 모바일에서는 적당한 패딩 유지 */
+    }
+
+    .download-notice {
+        padding: 0.75rem 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .download-notice p {
+        font-size: 0.9rem;
     }
 }

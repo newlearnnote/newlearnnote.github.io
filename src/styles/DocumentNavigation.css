@@ -2,8 +2,12 @@
     width: 280px;
     min-width: 280px;
     background: var(--bg-secondary);
+    position: fixed;
+    top: 60px; /* 헤더 아래에 고정 */
+    left: 0;
+    height: calc(100vh - 60px);
     overflow-y: auto;
-    height: 100%;
+    z-index: 999;
 }
 
 .nav-header {
@@ -11,6 +15,7 @@
     border-bottom: 1px solid var(--border-color);
     position: sticky;
     top: 0;
+    background: var(--bg-secondary); /* 스크롤 시 배경 유지 */
     z-index: 10;
 }
 
@@ -69,6 +74,7 @@
 /* Mobile responsive */
 @media (max-width: 768px) {
     .doc-navigation {
+        position: static; /* 모바일에서는 fixed 해제 */
         width: 100%;
         min-width: 100%;
         height: auto;

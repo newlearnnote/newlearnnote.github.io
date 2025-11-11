@@ -1,7 +1,5 @@
 # NewLearnNote 소개
 
-> [이곳](http://newlearnnote.github.io/#/download)에서 **NewLearn Note**를 다운로드 할 수 있습니다.
-
 ## 1. 소개
 
 **NewLearnNote**는 AI와 집단지성을 결합한 차세대 지식 관리 플랫폼입니다. 기존의 개인 노트 앱이 정보 기록에 머물렀다면, NewLearnNote는 정보를 활용하고 성장시키는 데 중점을 둡니다.
