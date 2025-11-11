@@ -1,7 +1,6 @@
 header {
-    background-color: var(--bg-secondary);
+    background-color: var(--bg-primary);
     backdrop-filter: blur(10px);
-    border-bottom: 1px solid var(--border-color);
     position: fixed;
     top: 0;
     left: 0;

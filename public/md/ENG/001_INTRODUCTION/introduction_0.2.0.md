@@ -1,5 +1,7 @@
 # NewLearnNote Introduction
 
+> You can download **NewLearn Note** in [this page](http://newlearnnote.github.io/#/download)
+
 ## 1. Introduction
 
 **NewLearnNote** is a next-generation knowledge management platform that combines AI and collective intelligence. While traditional personal note-taking applications focus primarily on information recording, NewLearnNote emphasizes utilizing and expanding that information.

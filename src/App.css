@@ -1,17 +1,17 @@
 /* ===== CSS VARIABLES FOR THEME SYSTEM ===== */
 :root {
     /* Dark Theme (Default) */
-    --bg-primary: #111111;
-    --bg-secondary: #222222;
-    --bg-tertiary: #333333;
-    --bg-hover: #444444;
+    --bg-primary: #202020;
+    --bg-secondary: #252525;
+    --bg-tertiary: #303030;
+    --bg-hover: #505050;
 
     --text-primary: #ffffff;
     --text-secondary: #ababab;
     --text-button: #ababab;
 
-    --border-color: #333333;
-    --border-hover: #555555;
+    --border-color: #404040;
+    --border-hover: #606060;
 
     /* Accent Colors */
     --accent-mint: #93e3c0;
