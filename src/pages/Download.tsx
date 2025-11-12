@@ -1,17 +1,25 @@
 import Header from "../components/layout/Header.tsx";
 import Footer from "../components/layout/Footer.tsx";
+import { useLanguage } from "../contexts/LanguageContext.tsx";
+import { translations } from "../locales/download.ts";
 import "../App.css";
 import "../styles/Download.css";
 
 function Download() {
-    const handleWindowsDemo = () => {
-        // TODO: 깃허브 릴리즈가 준비되면 실제 다운로드 링크로 변경
-        alert("Windows Demo - We are preparing the demo download.");
+    const { language } = useLanguage();
+    const t = translations[language].download;
+
+    // GitHub Release 다운로드 URL
+    const GITHUB_RELEASE_URL =
+        "https://github.com/newlearnnote/desktop-app/releases/download/v0.1.0-beta/NewLearnNote.Setup.0.1.0.exe";
+
+    const handleWindowsDownload = () => {
+        window.location.href = GITHUB_RELEASE_URL;
     };
 
     const handleMacOSDemo = () => {
-        // TODO: 깃허브 릴리즈가 준비되면 실제 다운로드 링크로 변경
-        alert("macOS Demo - We are preparing the demo download.");
+        const message = language === "KOR" ? "macOS 버전 - 준비 중입니다!" : "macOS version - Coming soon!";
+        alert(message);
     };
 
     return (
@@ -20,13 +28,11 @@ function Download() {
             <div className="download-page">
                 <div className="download-container">
                     <div className="download-content">
-                        <h1 className="download-title">Download NewLearnNote</h1>
-                        <p className="download-subtitle">
-                            AI-powered knowledge management platform for collaborative learning
-                        </p>
+                        <h1 className="download-title">{t.title}</h1>
+                        <p className="download-subtitle">{t.subtitle}</p>
 
                         <div className="download-buttons">
-                            <button className="download-button windows" onClick={handleWindowsDemo}>
+                            <button className="download-button windows" onClick={handleWindowsDownload}>
                                 <div className="button-icon">
                                     <svg
                                         width="24"
@@ -42,8 +48,8 @@ function Download() {
                                     </svg>
                                 </div>
                                 <div className="button-content">
-                                    <span className="button-title">Windows Demo</span>
-                                    <span className="button-description">Windows 10 or later</span>
+                                    <span className="button-title">{t.windowsButton}</span>
+                                    <span className="button-description">{t.windowsDescription}</span>
                                 </div>
                                 <div className="button-arrow">
                                     <svg
@@ -80,8 +86,8 @@ function Download() {
                                     </svg>
                                 </div>
                                 <div className="button-content">
-                                    <span className="button-title">macOS Demo</span>
-                                    <span className="button-description">macOS 10.15 or later</span>
+                                    <span className="button-title">{t.macosButton}</span>
+                                    <span className="button-description">{t.macosDescription}</span>
                                 </div>
                                 <div className="button-arrow">
                                     <svg
@@ -105,8 +111,37 @@ function Download() {
 
                         <div className="download-note">
                             <p>
-                                <strong>Note:</strong> Demo versions are currently in development. Full release will be
-                                available soon through GitHub Releases.
+                                <strong>{t.betaWarning.title}</strong> {t.betaWarning.description}{" "}
+                                <a
+                                    href="https://github.com/newlearnnote/desktop-app/issues"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    {t.betaWarning.githubIssues}
+                                </a>
+                                {language === "KOR" ? "에서 알려주세요." : "."}
+                            </p>
+                        </div>
+
+                        <div className="download-info">
+                            <h3>{t.installationGuide.title}</h3>
+                            <ol>
+                                {t.installationGuide.steps.map((step, index) => (
+                                    <li key={index}>{step}</li>
+                                ))}
+                            </ol>
+
+                            <h3>{t.securityWarning.title}</h3>
+                            <p>
+                                {t.securityWarning.description}{" "}
+                                <a
+                                    href="https://github.com/newlearnnote/desktop-app"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    {t.securityWarning.githubRepo}
+                                </a>
+                                {language === "KOR" ? "에서 확인할 수 있습니다." : "."}
                             </p>
                         </div>
                     </div>
