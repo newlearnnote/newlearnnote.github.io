@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { useLanguage } from "../contexts/LanguageContext.tsx";
 import Header from "../components/layout/Header.tsx";
 import Footer from "../components/layout/Footer.tsx";
@@ -42,11 +42,11 @@ function Home() {
                                 {language === "ENG" ? (
                                     <p>
                                         {downloadTexts.ENG.text} <strong>{downloadTexts.ENG.appName}</strong> in{" "}
-                                        <a href="#/downloads/demo">{downloadTexts.ENG.linkText}</a>
+                                        <Link to="/downloads/demo">{downloadTexts.ENG.linkText}</Link>
                                     </p>
                                 ) : (
                                     <p>
-                                        <a href="#/downloads/demo">{downloadTexts.KOR.linkText}</a>
+                                        <Link to="/downloads/demo">{downloadTexts.KOR.linkText}</Link>
                                         {downloadTexts.KOR.text} <strong>{downloadTexts.KOR.appName}</strong>
                                         {downloadTexts.KOR.prefix}
                                     </p>
