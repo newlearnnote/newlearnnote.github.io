@@ -19,7 +19,7 @@ const Header = () => {
     return (
         <header className="header">
             <div className="container" id="header-container">
-                <Link to="https://newlearnnote.github.io/#/" className="logo">
+                <Link to="/" className="logo">
                     <img width="32px" height="32px" src="/logo.png" alt="newlearnnote Logo" />
                     <p className="logo-text">NewLearn Note</p>
                 </Link>
