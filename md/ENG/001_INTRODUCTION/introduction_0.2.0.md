@@ -1,31 +1,33 @@
 # NewLearnNote Introduction
 
-## 1. Introduction
+**NewLearnNote** is a markdown note-taking app that combines AI and collective intelligence.
 
-**NewLearnNote** is a next-generation knowledge management platform that combines AI and collective intelligence. While traditional personal note-taking applications focus primarily on information recording, NewLearnNote emphasizes utilizing and expanding that information.
+Like VSCode Copilot, you can request tasks from the AI assistant and grow together by referencing verified notes from other users.
 
-Modern knowledge workers face significant challenges in efficiently managing fragmented information and learning from others' specialized expertise. NewLearnNote was developed to address these issues of information overload and knowledge sharing gaps.
+## Why NewLearnNote?
 
-## 2. Development Philosophy
+### AI Assistance
+You can directly request tasks from AI like "Reorganize this note based on the PDF" or "Explain this concept simply." Chat with AI inside the editor to write and improve your notes.
 
-NewLearnNote is built on the fundamental belief that "knowledge becomes more valuable when shared." Our development team is guided by the following core values:
+### Knowledge Network
+Automatically receive recommendations for notes from other users related to the topic you're currently studying. You can reference verified knowledge without leaving the search engine, maintaining your learning flow.
 
-**Collaborative Growth**: We believe that genuine knowledge expansion occurs when individual learning connects with others' growth. This goes beyond simple information sharing to create a process where users build new insights based on each other's knowledge.
+### Perfect Synchronization
+Provides the same experience on desktop apps and web browsers. Combines local file management with cloud synchronization so you can work anytime, anywhere.
 
-**Active Learning**: Rather than passively accumulating information, we aim to foster an active learning culture where users continuously question and explore through AI interaction.
+### Open Knowledge Ecosystem
+You can selectively publish your notes to share with other learners. Creates a virtuous cycle where individual knowledge grows into a community asset.
 
-**Sustainable Knowledge Ecosystem**: Our goal is to build a healthy knowledge ecosystem where user contributions help other users, creating a virtuous cycle that benefits the entire community.
+## Who is this app for?
 
-## 3. Key Features
+- **Students**: Organizing lecture notes and preparing for exams
+- **Researchers**: Managing paper reviews and research ideas
+- **Developers**: Recording technical learning and problem-solving processes
+- **Knowledge Workers**: Accumulating work knowledge and sharing across teams
 
-**AI-Powered Active Learning Coach**
-The system analyzes your notes in real-time to provide personalized questions and learning pathways. It serves as a customized learning partner that identifies your learning patterns and fills knowledge gaps.
+A tool for anyone who wants to systematically build, share, and grow their knowledge.
 
-**Collective Intelligence Network**
-We provide a collaborative learning environment through knowledge referencing and interconnection between users. Individual expertise is naturally transmitted to other learners through the network, elevating the knowledge level of the entire community.
+## Get Started
 
-**Cross-Platform Support**
-The platform offers a consistent user experience across desktop and web interfaces, seamlessly integrating local file management with cloud synchronization. This enables uninterrupted learning anytime, anywhere.
-
-**Open and Transparent Knowledge Sharing**
-All published knowledge is designed to be verified and improved by other users. This ensures continuous quality improvement and the accumulation of reliable learning materials.
+→ [Quick Start Guide](../003_GETTING_STARTED/start_0.1.0.md)  
+→ [Explore Key Features](../002_OVERVIEW/overview_0.2.0.md)
