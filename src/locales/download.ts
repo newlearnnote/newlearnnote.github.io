@@ -11,8 +11,7 @@ export const translations = {
             macosDescription: "macOS 10.15 or later",
             betaWarning: {
                 title: "⚠️ Beta Version:",
-                description:
-                    "This is a beta release. You may encounter bugs or unexpected behavior. Please report any issues on our",
+                description: "This is a beta release. So issues may arise during usage.",
                 githubIssues: "GitHub Issues",
             },
             installationGuide: {
@@ -43,8 +42,7 @@ export const translations = {
             macosDescription: "macOS 10.15 이상",
             betaWarning: {
                 title: "⚠️ 베타 버전:",
-                description: "베타 버전으로 버그나 예상치 못한 동작이 발생할 수 있습니다. 문제 발견 시",
-                githubIssues: "GitHub Issues",
+                description: "베타 버전으로 버그나 예상치 못한 동작이 발생할 수 있습니다.",
             },
             installationGuide: {
                 title: "설치 가이드",

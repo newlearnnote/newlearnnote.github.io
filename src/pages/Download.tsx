@@ -112,14 +112,6 @@ function Download() {
                         <div className="download-note">
                             <p>
                                 <strong>{t.betaWarning.title}</strong> {t.betaWarning.description}{" "}
-                                <a
-                                    href="https://github.com/newlearnnote/desktop-app/issues"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    {t.betaWarning.githubIssues}
-                                </a>
-                                {language === "KOR" ? "에서 알려주세요." : "."}
                             </p>
                         </div>
 
