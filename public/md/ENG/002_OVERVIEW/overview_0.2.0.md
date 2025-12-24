@@ -1,121 +1,69 @@
 # NewLearnNote Overview
 
-## 1. Development Background
+## Core Features
 
-Modern society is experiencing an unprecedented era of information explosion. As the volume of information produced daily grows exponentially, knowledge workers including students, researchers, and professionals face significant challenges in transforming and utilizing information beyond mere consumption into meaningful knowledge.
+### AI Assistance (Premium)
+Like VSCode Copilot, chat with Gemini AI inside the editor to work on your notes.
 
-### 1-1. Current Limitations in Knowledge Management
+- **Document Automation**: "Organize this PDF content into markdown", "Summarize this note"
+- **Learning Support**: "Explain this concept so even an elementary student can understand", "Add example code"
+- **Structure Improvement**: "Improve the logical structure of this text", "Generate a table of contents"
+- **Reference Integration**: Reorganize multiple files into one well-organized note
 
-**Issues with Passive Information Management**
+### Knowledge Network
+A collective intelligence ecosystem where you grow together by referencing verified notes from other users.
 
-Existing note-taking applications remain limited to the role of digital notepads. While users record information, they receive no support on how that information can be connected and developed. As a result, accumulated notes often become unused digital clutter.
+- **Context-Based Recommendations**: Automatic recommendations for notes related to your current learning topic
+- **Living References**: When you embed another user's note, original updates are automatically reflected
+- **Trust System**: Quality assurance through field-specific reputation and community verification
 
-Modern learning focuses not on simple information storage, but on creating new insights through connections between pieces of information. However, existing tools fail to support this active learning process.
+### Perfect Synchronization
+Combines the powerful local file management of desktop apps with the convenience of the cloud.
 
-**Knowledge Isolation and Accessibility Issues**
+- **Electron Desktop App**: Perfect integration with local file system, offline support
+- **Web Interface**: Instant access from anywhere via browser
+- **Conflict Resolution**: Automatic synchronization and version control across multiple devices
 
-There exists a structural problem where valuable knowledge and experience accumulated by individuals are not shared with others, preventing them from benefiting from collective intelligence. Particularly during learning, when users need related experiences or organized materials from others, the process of opening separate web browsers to search for and verify reliable sources disrupts learning flow and scatters concentration.
+## Use Cases
 
-While Google search is powerful, it is optimized for general keyword-based information retrieval and has limitations in finding specialized knowledge relevant to the current learning context. Additionally, there is the burden of individually verifying the reliability of search results.
+### A Student's Day
+Opens lecture recordings and textbook PDFs, then asks AI to "Create exam prep summary notes based on these two materials." Gets recommended summary notes from other students on the same subject to deepen understanding.
 
-### 1-2. NewLearnNote's Approach
+### A Developer's Learning
+While reading official documentation and blog posts, asks AI to "Organize step-by-step how to apply this to my project." Automatically receives suggestions for notes from other developers using the same technology.
 
-NewLearnNote addresses these issues through two innovative approaches:
+### A Researcher's Paper Management
+Asks AI to "Extract common research methodologies from these three papers and organize them into a table." Discovers paper summaries shared by researchers in the same field and automatically manages references.
 
-**Learning Context-Aware Knowledge Connection**: The system analyzes the content and context of notes currently being written by users to proactively suggest highly relevant, verified knowledge from other users. This is achieved through semantic association analysis that goes beyond simple keyword matching.
+## Pricing Plans
 
-**Integrated Learning Environment**: Note creation, AI interaction, knowledge search, and reference management occur within a single unified interface, minimizing disruption to learning flow.
+### Free - Start Learning
+- Unlimited local note creation
+- View other users' public notes
+- Basic markdown editing
 
-## 2. Core Features
+### Basic - $5/month
+- All Free features
+- 5GB cloud storage
+- Multi-device synchronization
+- Advanced search features
+- Note web publishing
 
-### 2-1. AI-Powered Active Learning Coach (Premium Feature)
+### Plus - $10/month
+- All Basic features
+- **Unlimited AI Assistance**
 
-NewLearnNote's AI system serves as a genuine learning partner that goes beyond simple question-and-answer interactions.
+> 7-day free trial for all plans | 20% discount for annual payment
 
-**Content-Based Advanced Analysis**
-- Gemini AI performs real-time semantic analysis of user-written note content
-- Rather than simple keyword recognition, the system understands context and intent to generate customized in-depth questions
-- The system identifies user knowledge levels and suggests appropriately challenging related knowledge
-- Learning progress and comprehension are tracked to dynamically adjust personalized learning pathways
+## Tech Stack
 
-**Intelligent Document Creation Support**
-- Real-time document analysis and improvement suggestions through chat interface
-- Specific guidance for improving logical structure, strengthening arguments, and enhancing expression
-- Learning user writing styles to support consistent tone maintenance
-- Automated tools for citation and reference management
+- **Frontend**: React, TypeScript
+- **Desktop**: Electron.js
+- **Backend**: NestJS, Prisma
+- **Database**: PostgreSQL
+- **Storage**: Google Cloud Storage
+- **AI**: OpenAI API
 
-**Learning Pattern Analysis and Optimization**
-- Tracking and analyzing user learning time, subject-specific interests, and comprehension changes
-- Personalized suggestions for optimal learning timing and review cycles
-- Visualization of knowledge connections to create learning maps
+## Get Started
 
-### 2-2. Collective Intelligence Network
-
-NewLearnNote's core differentiating factor, the collective intelligence network, creates a virtuous cycle where individual user knowledge becomes an asset for the entire community.
-
-**Verified Knowledge Ecosystem**
-- When users publish notes to the network, they undergo community-based verification processes
-- Identification of trustworthy knowledge sources through user reputation systems by specialized fields
-- Operation of quality evaluation algorithms that combine knowledge contribution, citation frequency, and user feedback
-- Community-based reporting and correction systems for incorrect or biased content
-
-**Intelligent Cross-Reference System**
-- Direct embedding of other users' public notes into personal notes to build living reference relationships
-- Dynamic linking system where updates to referenced original notes are reflected in all referencing notes
-- Automatic discovery and suggestion of new insights through organic knowledge connections
-- Personalized learning content curation through reference relationship analysis
-
-**Collaborative Knowledge Building**
-- Collaborative note features allowing multiple users to edit jointly
-- Change tracking and rollback functionality through version management systems
-- Active discussion environments through real-time collaborative editing and comment systems
-
-### 2-3. Cross-Platform Integrated Environment
-
-**Powerful Desktop Application (Electron.js)**
-- Perfect integration with local file systems providing Obsidian-level file management functionality
-- Intuitive markdown-based editing environment with real-time preview
-- Extensible functional architecture through plugin systems
-- Full core functionality available in offline environments
-- Support for large file and complex folder structure management
-
-**Seamless Cloud Synchronization**
-- Real-time data synchronization and conflict resolution systems across multiple devices
-- Efficient data transmission and storage space optimization through incremental backups
-- Instantly accessible environment anywhere through web interface
-- Mobile app support for note creation and viewing while on the move
-
-**Integrated Search and Navigation**
-- Professional search engine integrating local and cloud data
-- Context-based content discovery through semantic search
-- Multi-dimensional information exploration using tags, links, and reference relationships
-
-## 3. Subscription Model
-
-NewLearnNote provides tiered services to meet users' diverse needs.
-
-**Free Plan - Beginning of Learning**
-- Local note creation and management (unlimited)
-- Viewing and basic referencing of other users' public notes
-- Basic markdown editing tools
-- Local file system management functionality
-
-**Basic Plan ($5/month) - Cloud Connection**
-- All Free Plan features
-- Multi-device cloud synchronization service
-- 15GB cloud storage space
-- Unlimited use of advanced search and filtering features
-- Basic reference relationship analysis and visualization
-
-**Plus Plan ($10/month) - AI Learning Partner**
-- All Basic Plan features
-- Unlimited AI-based learning coach functionality
-- Note web publishing and SEO optimization features
-- Unlimited cloud storage space
-- Advanced collaboration tools and team management features
-- Personalized learning analysis reports
-- API access (for developers)
-
-Each plan offers a 7-day free trial period, with a 20% discount applied for annual payments.
-
-NewLearnNote's customer support policy values all users equally and actively provides customer support services to all Free, Basic, and Plus users regardless of their plan.
+→ [Quick Start Guide](../003_GETTING_STARTED/start_0.1.0.md)

@@ -12,7 +12,12 @@
                 "files": ["overview_0.2.0.md"]
             },
             {
-                "id": "003_FAQ",
+                "id": "003_GETTING_STARTED",
+                "title": "시작하기",
+                "files": ["start_0.1.0.md"]
+            },
+            {
+                "id": "004_FAQ",
                 "title": "자주 묻는 질문",
                 "files": ["faq_0.1.0.md"]
             }
@@ -31,7 +36,12 @@
                 "files": ["overview_0.2.0.md"]
             },
             {
-                "id": "003_FAQ",
+                "id": "003_GETTING_STARTED",
+                "title": "Getting Started",
+                "files": ["start_0.1.0.md"]
+            },
+            {
+                "id": "004_FAQ",
                 "title": "Frequently Asked Questions",
                 "files": ["faq_0.1.0.md"]
             }
