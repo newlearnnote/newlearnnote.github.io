@@ -111,7 +111,7 @@ function Download() {
 
                         <div className="download-note">
                             <p>
-                                <strong>{t.betaWarning.title}</strong> {t.betaWarning.description}{" "}
+                                <strong>{t.betaWarning.title}</strong> {t.betaWarning.description}
                             </p>
                         </div>
 
