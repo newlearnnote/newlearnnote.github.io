@@ -62,11 +62,6 @@
 
 `5. Create Library`의 첫 번째 이미지에서 Library List 중 하나를 선택하여 Link 버튼을 클릭하면 `5. Create Library`의 마지막 이미지처럼 연결된 상태의 UI가 보여집니다.
 
-노트를 생성 또는 연결할 때 아키텍처는 아래와 같습니다.
-
-![create_link_architecture](../../../imgs/create_link_architecture.png)
-
-
 ## 7. Pull/Push/Overwrite
 
 라이브러리가 생성되고 연결이 된다면, 아래 이미지처럼 Pull, Push, Overwrite 세 개의 버튼이 보이게 됩니다. 
@@ -75,13 +70,9 @@
 
 Pull 버튼을 클릭한다면, 라이브러리의 저장된 파일과 폴더를 가져오고 **다운로드하는 메커니즘**이기에, 라이브러리에 없고, 로컬에 있는 파일이 삭제되지는 않습니다(삭제 상태가 그대로 덮어씌워지지 않음). 하지만 수정된 파일을 push하지 않고, pull한 경우 라이브러리에 저장된 상태 그대로 덮어씌워지게 됩니다.
 
-또한 Push 버튼 아래에 업로드할 수 있는 파일 목록이 뜨게 됩니다. 업로드할 수 있는 파일 목록은 마지막 Push 시점부터 지금까지 변경된 파일들입니다. 해당 버튼을 클릭하면 선택된 파일들만 라이브러리에 업로드됩니다. 아키 텍처 구조는 아래와 같습니다.
+또한 Push 버튼 아래에 업로드할 수 있는 파일 목록이 뜨게 됩니다. 업로드할 수 있는 파일 목록은 마지막 Push 시점부터 지금까지 변경된 파일들입니다. 해당 버튼을 클릭하면 선택된 파일들만 라이브러리에 업로드됩니다.
 
-![push_architecture](../../../imgs/push_architecture.png)
-
-**Overwrite 버튼**은 이미 그대로 로컬 폴더 구조 그대로 라이브러리에 덮어씌우게 됩니다. 아키텍처 구조는 아래와 같습니다.
-
-![overwrite_architecture](../../../imgs/overwrite_architecture.png)
+**Overwrite 버튼**은 로컬 폴더 구조 그대로 라이브러리에 덮어씌우게 됩니다.
 
 이렇게 라이브러리에 업로드된 파일은 Link와 Pull을 통해 다른 작업 환경에서 기존과 똑같은 작업 환경을 만드는데 도움을 주는 클라우드 서비스와 동일합니다.
 
@@ -131,16 +122,10 @@ Published 브랜치에 접근하면 처음에는 아래 이미지와 같이 아�
 
 노트를 pulish하게 되면 published 브랜치에 private 브랜치에서 해당 파일의 path를 그대로 복사하여 붙여넣습니다.
 
-예를 들어 private 브랜치에 `folder1/file1.md`를 publish 할 경우 published 브랜치에 `folder1/file1.md`를 그대로 복사합니다. 그리고 DB에 note 데이터를 저장합니다. 아키텍처 구조는 아래 이미지와 같습니다.
+예를 들어 private 브랜치에 `folder1/file1.md`를 publish 할 경우 published 브랜치에 `folder1/file1.md`를 그대로 복사합니다. 그리고 DB에 note 데이터를 저장합니다.
 
-![publish_architecture](../../../imgs/publish_architecture.png)
-
-이 note 데이터와 gcs 데이터를 활용해서 사용자는 자신의 파일에 다른 사용자의 publish 된 노트를 `notes/:noteId` url로 연결하여 참조할 수 있습니다.
+이 note 데이터를 활용해서 사용자는 자신의 파일에 다른 사용자의 publish 된 노트를 `notes/:noteId` url로 연결하여 참조할 수 있습니다.
 
 사용자는 자신의 파일에 특정 내용을 작성하며 공부할 수 있고, 추천 시스템은 현재 사용자가 작성중인 주제를 파악하여 다른 사용자가 작성한 노트에서 관련된 주제의 노트를 사용자에게 보여줍니다.
 
 또한 직접 검색할 수 있으며, 사용자는 다른 사용자의 노트를 참조하고 연결함으로써 노트 네트워크가 형성됩니다.
-
----
-
-수정된 부분은 섹션 7의 마지막 부분(92-96번 라인)에 Private/Published 개념을 명확하게 재작성한 부분입니다!
