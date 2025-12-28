@@ -62,10 +62,6 @@ Click the second button from the top in the left sidebar. You can see your exist
 
 In the first image of `5. Create Library`, select one from the Library List and click the Link button to see the connected state UI as shown in the last image of `5. Create Library`.
 
-The architecture when creating or linking a note is as follows:
-
-![create_link_architecture](../../../imgs/create_link_architecture.png)
-
 ## 7. Pull/Push/Overwrite
 
 Once the library is created and connected, you'll see three buttons: Pull, Push, and Overwrite as shown in the image below.
@@ -74,13 +70,9 @@ Once the library is created and connected, you'll see three buttons: Pull, Push,
 
 Clicking the Pull button **downloads** the files and folders stored in the library, so files that exist locally but not in the library are not deleted (the deleted state is not overwritten). However, if you pull without pushing modified files, they will be overwritten with the state stored in the library.
 
-Also, below the Push button, a list of files that can be uploaded appears. The uploadable file list consists of files that have changed from the last Push time until now. Clicking the button uploads only the selected files to the library. The architecture structure is as follows:
+Also, below the Push button, a list of files that can be uploaded appears. The uploadable file list consists of files that have changed from the last Push time until now. Clicking the button uploads only the selected files to the library.
 
-![push_architecture](../../../imgs/push_architecture.png)
-
-The **Overwrite button** overwrites the library with the local folder structure as is. The architecture structure is as follows:
-
-![overwrite_architecture](../../../imgs/overwrite_architecture.png)
+The **Overwrite button** overwrites the library with the local folder structure as is.
 
 Files uploaded to the library this way help create the same working environment in different work environments through Link and Pull, just like cloud services.
 
@@ -130,16 +122,11 @@ This is because no notes have been published. When you push files to the library
 
 When you publish a note, it copies and pastes the file path from the private branch to the published branch as is.
 
-For example, if you publish `folder1/file1.md` in the private branch, it copies `folder1/file1.md` to the published branch as is. Then it saves the note data in the database. The architecture structure is as shown in the image below.
+For example, if you publish `folder1/file1.md` in the private branch, it copies `folder1/file1.md` to the published branch as is. Then it saves the note data in the database.
 
-![publish_architecture](../../../imgs/publish_architecture.png)
-
-Using this note data and GCS data, users can reference other users' published notes by linking them with the `notes/:noteId` URL in their files.
+Using this note data, users can reference other users' published notes by linking them with the `notes/:noteId` URL in their files.
 
 Users can study by writing specific content in their files, and the recommendation system identifies the topic the user is currently writing about and shows them related notes from other users' notes.
 
 They can also search directly, and as users reference and link other users' notes, a note network is formed.
 
----
-
-The modified part is at the end of section 7 (lines 92-96) where the Private/Published concept has been clearly rewritten!
